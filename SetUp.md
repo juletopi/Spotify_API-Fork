@@ -6,14 +6,14 @@
     * `Client Secret`
 * Click on **Edit Settings**
 * In **Redirect URIs**:
-    * Add `http://localhost/callback/`
+    * Add `https://localhost/callback/`
 
 # Refresh Token
 
 * Navigate to the following URL:
 
 ```
-https://accounts.spotify.com/authorize?client_id={SPOTIFY_CLIENT_ID}&response_type=code&scope=user-read-currently-playing,user-read-recently-played&redirect_uri=http://localhost/callback/
+https://accounts.spotify.com/authorize?client_id={SPOTIFY_CLIENT_ID}&response_type=code&scope=user-read-currently-playing,user-read-recently-played&redirect_uri=https://localhost/callback/
 ```
 
 * After logging in, save the {CODE} portion of: `http://localhost/callback/?code={CODE}`
@@ -22,7 +22,7 @@ https://accounts.spotify.com/authorize?client_id={SPOTIFY_CLIENT_ID}&response_ty
 
 * Then run a [curl command](https://httpie.org/run) in the form of:
 ```sh
-curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Basic {BASE64}" -d "grant_type=authorization_code&redirect_uri=http://localhost/callback/&code={CODE}" https://accounts.spotify.com/api/token
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Basic {BASE64}" -d "grant_type=authorization_code&redirect_uri=https://localhost/callback/&code={CODE}" https://accounts.spotify.com/api/token
 ```
 
 * Save the Refresh token
@@ -77,7 +77,7 @@ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Authorizat
 
 You can now use the following in your readme:
 
-```[![Spotify](https://USER_NAME.vercel.app/api/spotify)](https://open.spotify.com/user/USER_NAME)```
+```[![Spotify](https://DEPLOYMENT_NAME.vercel.app/api/spotify)](https://open.spotify.com/user/SPOTIFY_USER_NAME)```
 
 # Customization
 
