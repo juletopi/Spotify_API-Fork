@@ -9,7 +9,7 @@
 
 <div align="center">
   <a href="#">
-    <img src="https://user-images.githubusercontent.com/76459155/230788288-ea6f5812-4aaf-4f22-8e92-bea32ca787c7.png" alt="TheContentCove-pic" width="124px">
+    <img src="https://user-images.githubusercontent.com/76459155/230788288-ea6f5812-4aaf-4f22-8e92-bea32ca787c7.png" alt="ForkedRepo-pic" width="124px" title="novatoren's Forked Repository">
   </a>
   <h2 align="center"> 🧷 Forked repository from "novatorem/novatorem"</h2>
 </div>
@@ -23,7 +23,7 @@
 <!-- CONTENT -->
 
 &nbsp;<div align="center">
-  [![Spotify](https://spotify-api-readme-fork.vercel.app/api/spotify/?background_color=0e1118&border_color=22252c)](https://open.spotify.com/user/7qje4cjhxymamlcmxzo749qvo)
+  [![Spotify Playing](https://spotify-api-readme-fork.vercel.app/api/spotify/?background_color=0e1118&border_color=22252c)](https://open.spotify.com/user/7qje4cjhxymamlcmxzo749qvo)
 </div>
 
 &nbsp;<div align="center">
