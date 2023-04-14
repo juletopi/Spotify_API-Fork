@@ -7,6 +7,10 @@
                     display: flex;
                 }
 
+                .subMain {
+                    display: flex;
+                }
+
                 .currentStatus {
                     float: left;
                     color: #c9c9c9;
@@ -16,7 +20,7 @@
                     margin-left: 10px;
                     margin-bottom: 10px;
                 }
-                
+
                 .container {
                     border-radius: 5px;
                     padding: 10px 10px 10px 0px;
@@ -125,19 +129,19 @@
                 {{barCSS|safe}}
             </style>
             
-            <div class="currentStatus">{{status}}</div>
-            
             <div class="main">
-                <a class="art" href="{}" target="_blank">
-                    <center>
-                        <img src="data:image/png;base64, {{image}}" class="cover" />
-                    </center>
-                </a>
-
-                <div class="content">
-                    <a href="{{songURI}}" target="_blank">
-                        <div class="song">{{songName}}</div>
+                <div class="currentStatus">{{status}}</div>
+                <div class="subMain">
+                    <a class="art" href="{}" target="_blank">
+                        <center>
+                            <img src="data:image/png;base64, {{image}}" class="cover" />
+                        </center>
                     </a>
+
+                    <div class="content">
+                        <a href="{{songURI}}" target="_blank">
+                            <div class="song">{{songName}}</div>
+                        </a>
                     <a href="{{artistURI}}" target="_blank">
                         <div class="artist">{{artistName}}</div>
                     </a>
