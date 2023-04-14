@@ -92,8 +92,8 @@ def makeSVG(data):
     barCSS = barGen(barCount)
 
     if data == {} or data["item"] == "None":
-        contentBar = "".join(["<div class='bar'></div>" for i in range(barCount)])
-        currentStatus = "Now offline, was playing:"
+        contentBar = ""
+        currentStatus = "Now offline, was playing"
         recentPlays = recentlyPlayed()
         recentPlaysLength = len(recentPlays["items"])
         itemIndex = random.randint(0, recentPlaysLength - 1)
@@ -101,7 +101,7 @@ def makeSVG(data):
     else:
         contentBar = "".join(["<div class='bar active'></div>" for i in range(barCount)])
         item = data["item"]
-        currentStatus = "Currently vibing to:"
+        currentStatus = "Currently vibing to"
     image = loadImageB64(item["album"]["images"][1]["url"])
     artistName = item["artists"][0]["name"].replace("&", "&amp;")
     songName = item["name"].replace("&", "&amp;")
