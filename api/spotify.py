@@ -92,7 +92,7 @@ def makeSVG(data):
     barCSS = barGen(barCount)
 
     if data == {} or data["item"] == "None":
-        contentBar = ""
+        # contentBar = ""
         currentStatus = "Now offline, was playing"
         recentPlays = recentlyPlayed()
         recentPlaysLength = len(recentPlays["items"])
