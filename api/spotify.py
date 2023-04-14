@@ -101,7 +101,7 @@ def makeSVG(data):
     else:
         contentBar = "".join(["<div class='bar active'></div>" for i in range(barCount)])
         item = data["item"]
-        currentStatus = "Vibing to:"
+        currentStatus = "Currently vibing to:"
     image = loadImageB64(item["album"]["images"][1]["url"])
     artistName = item["artists"][0]["name"].replace("&", "&amp;")
     songName = item["name"].replace("&", "&amp;")
