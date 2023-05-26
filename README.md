@@ -2,7 +2,6 @@
 
 <div align="left">
   <img src="https://img.shields.io/github/license/juletopi/Spotify_API-Fork" alt="UnliscencedLiscence-badge">
-  <img src="https://github-visitors-badge.glitch.me/badge?page_id=Spotify_API-Fork.github-visitors-badge" alt="PageVisitors-badge">
 </div>
 
 <!-- TITLE INTRODUCTION -->
